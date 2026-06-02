@@ -1,0 +1,17 @@
+{
+  "name": "github-repo-explorer-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "start": "npm start --workspace=server",
+    "test:server": "npm test --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
