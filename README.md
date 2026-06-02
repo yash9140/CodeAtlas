@@ -5,8 +5,8 @@ An interview-ready, full-stack application built for the Studio Graphene Full St
 To ensure client security and bypass direct GitHub API limits, all client communication is routed through a Node.js Express proxy layer, which implements memory caching to ensure fast loading times and rate-limiting resilience.
 
 ## 🚀 Live Demos
-- **Frontend (Vercel)**: `https://github-explorer-client.vercel.app` (Demo Link Placeholder)
-- **Backend (Render)**: `https://github-explorer-api.onrender.com` (Demo Link Placeholder)
+- **Frontend (Vercel)**: [https://code-atlas-client.vercel.app/](https://code-atlas-client.vercel.app/)
+- **Backend (Render)**: [https://codeatlas-cgyv.onrender.com/](https://codeatlas-cgyv.onrender.com/)
 
 ---
 
@@ -252,7 +252,7 @@ Backend tests run using **Vitest** to assert service fetches, caching logic, and
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 4. Add environment variables:
-   - `VITE_API_URL`: Your deployed Render Web Service URL (e.g. `https://github-explorer-api.onrender.com`).
+   - `VITE_API_URL`: Your deployed Render Web Service URL (e.g. `https://codeatlas-cgyv.onrender.com`).
 
 ---
 
