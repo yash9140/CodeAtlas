@@ -21,6 +21,14 @@ app.use(express.json());
 // Routes
 app.use('/api/github', githubRoutes);
 
+// Root/health check endpoint for Render deployment verification
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'GitHub Explorer Proxy API is operational.'
+  });
+});
+
 // Catch-all route for unmatched API requests
 app.use('*', (req, res, next) => {
   const err = new Error('Resource not found');
